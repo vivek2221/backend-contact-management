@@ -1,4 +1,6 @@
 import Connect, { client } from './mongodriver.js'
+import dotenv from "dotenv"
+dotenv.config()
 const db=await Connect()
 await db.createCollection('currusers',{
     validator:{

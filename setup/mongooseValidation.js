@@ -1,6 +1,12 @@
 import mongoose from 'mongoose'
 import connectDb from './mongoose.js'
+import dotenv from "dotenv"
+import { isConnected } from './mongoose.js'
+dotenv.config()
+if(!isConnected){
 await connectDb()
+}
+
 const loginSchema=new mongoose.Schema({
     name:{
         type:String,

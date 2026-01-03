@@ -20,7 +20,7 @@ server.delete('/deleteContact',delContact)
 server.post('/favorite',favorite)
 server.get('/getFavorite',getFavorite)
 
-server.listen(process.env.PORT,process.env.HOST,()=>{
-    console.log('server started on port 2000')
-})
+// server.listen(process.env.PORT,process.env.HOST,()=>{
+//     console.log('server started on port 2000')
+// })
 module.exports=server
