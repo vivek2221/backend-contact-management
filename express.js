@@ -7,7 +7,7 @@ import { getContact, setContact,delContact, favorite, getFavorite } from './rout
 dotenv.config()
 const server=express()
 server.use(cors({
-    origin:"https://contact-management-pink.vercel.app/",
+    origin:"https://contact-management-pink.vercel.app",
     credentials:true
 
 }))
