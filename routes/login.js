@@ -3,7 +3,7 @@ import { modelLogin } from '../setup/mongooseValidation.js'
 export const Login=async(req,res)=>{
      const {name,email,passwd:password}=req.body
      const finded=await modelLogin.find({name,email,password})
-     if(finded){
+     if(finded.id){
      res.cookie('sessionId',finded.id,{
       httpOnly:'true',
   sameSite: 'none',
