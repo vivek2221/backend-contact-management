@@ -23,3 +23,4 @@ server.get('/getFavorite',getFavorite)
 server.listen(process.env.PORT,process.env.HOST,()=>{
     console.log('server started on port 2000')
 })
+module.exports=server

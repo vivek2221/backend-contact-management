@@ -2,10 +2,7 @@
     "version":2,
     "build":[{
         "src":"express.js",
-        "use":"versel.node",
-        "config":{
-            "includeFiles":["dist/**"]
-        }
+        "use":"versel/node"
     
     }
     ],
